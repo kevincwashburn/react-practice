@@ -3,16 +3,14 @@ import React from "react";
 function MainContent() {
     return (
         <div>
+            <p>Places I want to live...</p>
             <ul>
-                <li>li 1</li>
-                <li>li 2</li>
-                <li>li 3</li>
+                <li>Mexico</li>
+                <li>Colombia</li>
+                <li>Brazil</li>
             </ul>
-            <main>
-                <p>Here is a paragraph in the main section.</p>
-            </main>
         </div>
     )
-};
+}
 
 export default MainContent;
