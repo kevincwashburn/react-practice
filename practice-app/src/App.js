@@ -1,20 +1,13 @@
 import React from "react";
-import Footer from "./components/Footer"
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import MainContent from "./components/MainContent";
 
 function App() {
   return (
     <div>
-      <nav>
-        <h1>Hello World!</h1>
-        <ul>
-          <li>thing 1</li>
-          <li>thing 2</li>
-          <li>thing 3</li>
-        </ul>
-      </nav>
-      <main>
-        <p>Here is a paragraph in the main section.</p>
-      </main>
+      <Header />
+      <MainContent />
       <Footer />
     </div>
   )
