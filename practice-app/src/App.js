@@ -1,20 +1,14 @@
 import React from "react";
+import Header from "./components/Header";
+import MainContent from "./components/MainContent";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
-      <input type="checkbox" id="box1"></input>
-        <span> Please select this box if you so desire.</span>
-        <br></br>
-        <br></br>
-
-      <input type="checkbox" id="box2"></input>
-        <span>Or select this box..</span>
-        <br></br>
-        <br></br>
-
-      <input type="checkbox" id="box3"></input>
-      <span>Better yet, select this box if you so choose.</span>
+      <Header />
+      <MainContent />
+      <Footer />
     </div>
   )
 };
