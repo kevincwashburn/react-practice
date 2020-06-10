@@ -1,27 +1,35 @@
 import React from "react";
-import Header from "./components/Header";
-import MainContent from "./components/MainContent";
-import Footer from "./components/Footer";
+// import Header from "./components/Header";
+// import MainContent from "./components/MainContent";
+// import Footer from "./components/Footer";
+import TodoItem from "./components/TodoItem";
 
 function App() {
   const date = new Date();
   const hours = date.getHours();
   let timeOfDay;
-  
-  if(hours < 12) {
-    timeOfDay = "morning"
+  const styles = {
+    fontSize: 30,
+    fontFamily: "Roboto, sans-serif",
+    textAlign: "center"
+  };
+
+  if (hours < 12) {
+    timeOfDay = "morning";
   } else if (hours > 12 && hours < 17) {
-    timeOfDay = "afternoon"
+    timeOfDay = "afternoon";
   } else {
-    timeOfDay = "night"
-  }
+    timeOfDay = "night";
+  };
 
   return (
     <div>
-      <Header />
-      <h3>Good {timeOfDay}!</h3>
-      <MainContent />
-      <Footer />
+      <h3 style={styles}>Good {timeOfDay}!</h3>
+      <div className="todo-list">
+        <TodoItem />
+        <TodoItem />
+        <TodoItem />
+      </div>
     </div>
   )
 };
