@@ -1,4 +1,4 @@
-const product = [
+const products = [
     {
         id: "1",
         name: "Pencil",
@@ -29,4 +29,6 @@ const product = [
         price: 0,
         description: "Free snacks!"
     }
-]
+];
+
+export default products;
