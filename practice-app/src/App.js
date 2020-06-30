@@ -3,11 +3,11 @@ import Product from "./Product";
 import productsData from "./productsData";
 
 function App() {
-  const productCompilation = productsData.map(item => <Product key={item.id} product={item}/>);
+  const productComponents = productsData.map(item => <Product key={item.id} product={item}></Product>)
 
   return (
     <div>
-    {productCompilation}
+    {productComponents}
     </div>
   )
 };
