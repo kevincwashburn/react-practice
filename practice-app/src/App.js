@@ -15,4 +15,3 @@ function App() {
 
 export default App;
 
-// https://reactjs.org/docs/events.html#supported-events
