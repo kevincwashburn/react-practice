@@ -1,25 +1,34 @@
-// pre-answer 2:12:26
-// answer 2:15:11
+// solved: 2:21:55
+// unsolved: 2:20:19
 
-import React, {Component} from "react";
+import React, { Component } from "react";
+import TodoItem from "./TodoItem";
+import todosData from "./todosData";
+
+
+
+// function App() {
+//   const todoItems = todosData.map(item => <TodoItem key={item.id} item={item} />)
+
+//   return (
+//     <div className="todo-list">
+//       {todoItems}
+//     </div>
+//   )
+// }
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      isLoggedIn: false
+      todos: todosData
     }
   }
   render() {
-    let status;
-    if (this.state.isLoggedIn === true) {
-      status = "in"
-    } else if (!this.state.isLoggedIn) {
-      status = "out"
-    }
+    const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item} />)
     return (
-      <div>
-        <h1>You are currently logged {status}</h1>
+      <div className="todo-list">
+        {todoItems}
       </div>
     )
   }
