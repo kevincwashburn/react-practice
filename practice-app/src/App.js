@@ -1,37 +1,18 @@
-// solved: 2:21:55
-// unsolved: 2:20:19
+import React from "react";
 
-import React, { Component } from "react";
-import TodoItem from "./TodoItem";
-import todosData from "./todosData";
-
-
-
-// function App() {
-//   const todoItems = todosData.map(item => <TodoItem key={item.id} item={item} />)
-
-//   return (
-//     <div className="todo-list">
-//       {todoItems}
-//     </div>
-//   )
-// }
-
-class App extends Component {
-  constructor() {
-    super()
-    this.state = {
-      todos: todosData
-    }
-  }
-  render() {
-    const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item} />)
-    return (
-      <div className="todo-list">
-        {todoItems}
-      </div>
-    )
-  }
-}
+function App() {
+  return (
+    <div>
+      <img src="https://www.fillmurray.com/200/100" alt="placeholder" onMouseOver={console.log("I was hovered over")
+      } />
+      <br />
+      <br />
+      <button onClick={() => console.log("I was clicked!")
+      }>Click Me</button>
+    </div>
+  )
+};
 
 export default App;
+
+// https://reactjs.org/docs/events.html#supported-events
