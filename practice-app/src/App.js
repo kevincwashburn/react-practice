@@ -1,13 +1,21 @@
-// import React from "react";
+// 2:10:27
 
-// class App extends React.component {
-//   render () {
-//     return (
-//       <div>
-//         <h1>{this.props.whatever}</h1>
-//       </div>
-//     )
-//   }
-// };
+import React from "react";
 
-// export default App;
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      answer: "Yes"
+    }
+  }
+  render() {
+    return (
+      <div>
+        <h1>Is state important to know? {this.state.answer}</h1>
+      </div>
+    )
+  }
+};
+
+export default App;
