@@ -3,7 +3,7 @@ import React from "react";
 function App() {
   return (
     <div>
-      <img src="https://www.fillmurray.com/200/100" alt="placeholder" onMouseOver={console.log("I was hovered over")
+      <img src="https://www.fillmurray.com/200/100" alt="placeholder" onMouseOver={() => console.log("I was hovered over")
       } />
       <br />
       <br />
