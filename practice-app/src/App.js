@@ -6,15 +6,14 @@ class App extends Component {
     this.state = {
       count: 0
     }
-    this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick() {
-    this.setState(prevState => {
-      return {
-        count: prevState.count + 1
-      }
-    })
+  this.setState(prevState => {
+    return {
+      count: prevState.count + 1
+    }
+  })
   }
 
   render() {
@@ -25,6 +24,7 @@ class App extends Component {
       </div>
     )
   }
-};
+  
+}
 
 export default App;
