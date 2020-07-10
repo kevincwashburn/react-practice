@@ -5,7 +5,7 @@ function Conditional(props) {
    
     return (
         <div>
-            {props.isLoading === true ? <h1>Loading...</h1> : <h1>Not loading.</h1>}
+            {props.isLoading ? <h1>Loading...</h1> : <h1>Not loading.</h1>}
         </div>
     )
 }
