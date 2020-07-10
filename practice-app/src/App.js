@@ -13,6 +13,21 @@ class App extends Component {
   // - API calls (data retreival)
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    // return true if want it to update
+    // or return false if not
+  }
+
+  componentWillUnmount() {
+    // main use: clean up or tear down, what has been set up that will clutter the app or the DOM
+    // ie: an event listener - this method would remove the event listener
+  }
+
+  static getDerivedStateFromProps(props, state) {
+    // receives props and state, and should return new updated state based on props
+    // PROBABLY DON'T NEED THIS METHOD
+  }
+
   // DEPREICATED...
   // componentWillReceiveProps(nextProps) {
   //   // this component could be receiving props from a parent component
@@ -32,16 +47,6 @@ class App extends Component {
   // componentWillUpdate() {
 
   // }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    // return true if want it to update
-    // or return false if not
-  }
-
-  componentWillUnmount() {
-    // main use: clean up or tear down, what has been set up that will clutter the app or the DOM
-    // ie: an event listener - this method would remove the event listener
-  }
 
   render() {
     return (
