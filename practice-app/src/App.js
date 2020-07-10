@@ -23,6 +23,16 @@ class App extends Component {
     }
   }
 
+  // DEPREICATED...
+  componentWillMount() {
+
+  }
+
+  // DEPRICATED...
+  componentWillUpdate() {
+    
+  }
+
   shouldComponentUpdate(nextProps, nextState) {
     // return true if want it to update
     // or return false if not
