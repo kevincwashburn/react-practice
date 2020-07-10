@@ -1,6 +1,7 @@
 import React from "react";
 
 function Conditional(props) {
+    // condition ? statement if true : statement if false
     if(props.isLoading === true) {
         return (
             <h1>Loading...</h1>
