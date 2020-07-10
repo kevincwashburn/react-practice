@@ -28,6 +28,12 @@ class App extends Component {
     // PROBABLY DON'T NEED THIS METHOD
   }
 
+  getSnapshotBeforeUpdate() {
+    // create a backup of the current way things are...
+    // saving data of some sort (an object or "snapshot")
+    // NOT VERY COMMON lifecycle method
+  }
+
   // DEPREICATED...
   // componentWillReceiveProps(nextProps) {
   //   // this component could be receiving props from a parent component
