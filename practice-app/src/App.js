@@ -28,6 +28,11 @@ class App extends Component {
     // or return false if not
   }
 
+  componentWillUnmount() {
+    // main use: clean up or tear down, what has been set up that will clutter the app or the DOM
+    // ie: an event listener - this method would remove the event listener
+  }
+
   render() {
     return (
       <div>
