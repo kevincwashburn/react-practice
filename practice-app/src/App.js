@@ -14,24 +14,24 @@ class App extends Component {
   }
 
   // DEPREICATED...
-  componentWillReceiveProps(nextProps) {
-    // this component could be receiving props from a parent component
-    // every time this component receives props, this method runs
-    // will not only run every time the component is mounted, but will also run every time a parent component hands props to child component
-    if (nextProps.whatever !== this.props.whatever) {
-      // do something important here
-    }
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   // this component could be receiving props from a parent component
+  //   // every time this component receives props, this method runs
+  //   // will not only run every time the component is mounted, but will also run every time a parent component hands props to child component
+  //   if (nextProps.whatever !== this.props.whatever) {
+  //     // do something important here
+  //   }
+  // }
 
   // DEPREICATED...
-  componentWillMount() {
+  // componentWillMount() {
 
-  }
+  // }
 
   // DEPRICATED...
-  componentWillUpdate() {
-    
-  }
+  // componentWillUpdate() {
+
+  // }
 
   shouldComponentUpdate(nextProps, nextState) {
     // return true if want it to update
